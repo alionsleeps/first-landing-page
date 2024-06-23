@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    text-align: center;
 }
 
 
@@ -27,6 +29,7 @@ body {
 
 .logo {
     margin: auto;
+    font-weight: 800;
     font-size: 24px;
     color: #f9faf8;
 }
@@ -36,21 +39,25 @@ li {
     text-decoration: none;
     text-decoration-style: none;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .first-section-body {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
     
- 
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
 }
 
 .body-text {
-    border: solid;
-    max-width: 33%;
+    max-width: 40%;
+    text-align: left;
+    margin: auto;
+
 }
 
 .header-main, .header-sub {
@@ -68,32 +75,53 @@ li {
     font-size: 18px;
 }
 
+.header-button {
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 4px 22px;
+    margin-bottom: 30px;
+}
+
 .image-placeholder {
     display: flex;
-    
-    min-width: 33%;
+    margin: auto;
+    min-width: 40%;
     max-height: 250px;
     height: auto;
+}
+
+.second-section {
+    margin-bottom: 50px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
 }
 
 .subjects {
     gap: 28px;
     display: flex;
-    flex: auto;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .images-with-subtext {
-    max-width: 250px;
+    max-width: 215px;
 }
 
 .middle-image {
     border-style: solid;
     border-color: #3882f6;
     border-radius: 25px;
-    max-width: 200px;
-    height: auto;
+    width: 190px;
+    height: 170px;
+    object-fit: fill;
 }
 
 .image-subtext {
@@ -105,21 +133,43 @@ li {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    padding: 40px 60px;
+    margin-bottom: 30px;
 }
 
-.quote-author {
-    margin-top: 0;
-    border-style: solid;
-    align-self: center;
+.third-all-text {
+    max-width: 75%;
+    margin: auto;
+
+
 }
+
+.quote {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    
+    margin-bottom: 0;
+    max-width: 1000px;
+}
+
+.testimony-author {
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: right;
+    font-weight: 700;
+    font-size: large;
+}
+
+
+
 
 .footer{
     color: white;
     display: flex;
     align-content: center;
     justify-content: center;
-   
 }
 
 .footer, .first-section {
